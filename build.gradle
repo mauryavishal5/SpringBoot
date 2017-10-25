@@ -1,3 +1,18 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.8.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+
+    }
+}
+plugins {
+    id 'org.springframework.boot' version '1.5.8.RELEASE'
+}
 group 'com.practice'
 version '1.0-SNAPSHOT'
 
